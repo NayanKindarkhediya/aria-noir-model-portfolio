@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria Noir — Model Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-logo">ARIA NOIR</div>
+        <div class="loader-bar-wrap">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- FLOATING SOCIAL -->
+    <div class="float-social">
+        <a href="#" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="5" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+        </a>
+        <a href="#" title="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+            </svg>
+        </a>
+        <a href="mailto:aria@arianoir.com" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 7 10-7" />
+            </svg>
+        </a>
+        <a href="#" title="Pinterest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.087-.791-.166-2.005.034-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.852 0 1.265.64 1.265 1.408 0 .858-.546 2.14-.828 3.33-.236.994.499 1.806 1.476 1.806 1.773 0 3.137-1.868 3.137-4.566 0-2.386-1.715-4.055-4.163-4.055-2.836 0-4.498 2.127-4.498 4.328 0 .857.33 1.775.741 2.277a.3.3 0 0 1 .068.285c-.075.314-.243.994-.276 1.133-.044.183-.146.222-.337.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.472 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.966-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446C17.522 22 22 17.523 22 12S17.522 2 12 2z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">Aria Noir</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#stats">Press</a></li>
+            <li><a href="#contact" class="nav-cta">Book Me</a></li>
+        </ul>
+        <div class="nav-burger" id="burger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-tag">Fashion &amp; Lifestyle Model</div>
+            <h1 class="hero-title">Elegance<br>in <em>Every</em><br>Pose</h1>
+            <p class="hero-subtitle">High fashion. Luxury editorials. Campaigns that transcend the ordinary and become
+                iconic.</p>
+            <a href="#portfolio" class="btn-primary">
+                <span>View Portfolio</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14m-7-7 7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-img-wrap reveal-left">
+                <img src="https://i.pinimg.com/1200x/cb/8e/ba/cb8eba71d22908bf61144c76e8dff908.jpg"
+                    alt="Aria Noir — Model">
+            </div>
+            <div class="about-text reveal-right">
+                <div class="section-tag">The Face</div>
+                <h2 class="section-title">Meet <em>Aria</em> Noir</h2>
+                <div class="section-divider"></div>
+                <p class="about-bio">Born in Paris, now gracing the runways of Milan, New York, and Tokyo — Aria Noir is
+                    a force of nature in contemporary high fashion. With over a decade of experience and an innate sense
+                    of movement, she transforms every lens into a storytelling device.<br><br>Her portfolio spans luxury
+                    couture, editorial campaigns, and global brand collaborations with names that define modern
+                    elegance. She brings authenticity, discipline, and artistry to every project.</p>
+                <div class="about-stats">
+                    <div class="about-stat"><span class="about-stat-num">10+</span><span
+                            class="about-stat-label">Years</span></div>
+                    <div class="about-stat"><span class="about-stat-num">80+</span><span
+                            class="about-stat-label">Brands</span></div>
+                    <div class="about-stat"><span class="about-stat-num">4M+</span><span
+                            class="about-stat-label">Reach</span></div>
+                </div>
+                <div class="about-tags">
+                    <span class="about-tag">Vogue Editorial</span>
+                    <span class="about-tag">Runway</span>
+                    <span class="about-tag">Brand Ambassador</span>
+                    <span class="about-tag">Luxury</span>
+                    <span class="about-tag">Campaigns</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="port-header">
+            <div>
+                <div class="section-tag">Work</div>
+                <h2 class="section-title">The <em>Portfolio</em></h2>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="street">Street Style</button>
+                <button class="filter-tab" data-filter="luxury">Luxury</button>
+                <button class="filter-tab" data-filter="editorial">Editorial</button>
+            </div>
+        </div>
+        <div class="gallery-grid reveal" id="galleryGrid">
+            <div class="gallery-item" data-cat="luxury" onclick="openLightbox(this)">
+                <img src="https://i.pinimg.com/1200x/5c/44/ff/5c44ff32e65e16cb1e0a169f1f5ad043.jpg"
+                    alt="Luxury">
+                <div class="gallery-overlay">
+                    <div class="gallery-cat">Luxury</div>
+                    <div class="gallery-title">Maison Élite</div>
+                </div>
+                <div class="gallery-icon">+</div>
+            </div>
+            <div class="gallery-item" data-cat="editorial" onclick="openLightbox(this)">
+                <img src="https://i.pinimg.com/1200x/4f/b2/7a/4fb27aa7e37da4d154e8f2d54139a8ea.jpg"
+                    alt="Editorial">
+                <div class="gallery-overlay">
+                    <div class="gallery-cat">Editorial</div>
+                    <div class="gallery-title">Vogue Italia</div>
+                </div>
+                <div class="gallery-icon">+</div>
+            </div>
+            <div class="gallery-item" data-cat="street" onclick="openLightbox(this)">
+                <img src="https://i.pinimg.com/736x/ea/11/a4/ea11a4cf56764906b73a65edd2c6c007.jpg"
+                    alt="Street">
+                <div class="gallery-overlay">
+                    <div class="gallery-cat">Street Style</div>
+                    <div class="gallery-title">Urban Luxe</div>
+                </div>
+                <div class="gallery-icon">+</div>
+            </div>
+            <div class="gallery-item" data-cat="editorial" onclick="openLightbox(this)">
+                <img src="https://i.pinimg.com/736x/92/20/27/9220278720d32387804125bf9ea0af46.jpg"
+                    alt="Editorial">
+                <div class="gallery-overlay">
+                    <div class="gallery-cat">Editorial</div>
+                    <div class="gallery-title">Noir Collection</div>
+                </div>
+                <div class="gallery-icon">+</div>
+            </div>
+            <div class="gallery-item" data-cat="luxury" onclick="openLightbox(this)">
+                <img src="https://i.pinimg.com/webp85/1200x/78/70/45/7870454f25b8e70fb844ba028a72ff47.webp"
+                    alt="Luxury">
+                <div class="gallery-overlay">
+                    <div class="gallery-cat">Luxury</div>
+                    <div class="gallery-title">Couture Gala</div>
+                </div>
+                <div class="gallery-icon">+</div>
+            </div>
+            <div class="gallery-item" data-cat="street" onclick="openLightbox(this)">
+                <img src="https://i.pinimg.com/736x/49/b7/fe/49b7fe5981f28c3edb3c22e503b6965b.jpg"
+                    alt="Street">
+                <div class="gallery-overlay">
+                    <div class="gallery-cat">Street Style</div>
+                    <div class="gallery-title">Paris Walkthrough</div>
+                </div>
+                <div class="gallery-icon">+</div>
+            </div>
+            <div class="gallery-item" data-cat="street" onclick="openLightbox(this)">
+                <img src="https://i.pinimg.com/736x/e9/85/06/e98506752e5a462b1305c81a52410602.jpg"
+                    alt="Street">
+                <div class="gallery-overlay">
+                    <div class="gallery-cat">Editorial</div>
+                    <div class="gallery-title">Ashika Ranganath</div>
+                </div>
+                <div class="gallery-icon">+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div style="text-align:center; max-width:560px; margin: 0 auto 64px;">
+            <div class="section-tag" style="justify-content:center;">What I Offer</div>
+            <h2 class="section-title">Services &amp; <em>Expertise</em></h2>
+            <div class="section-divider" style="margin: 0 auto 0;"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-num">01</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                </div>
+                <div class="service-name">Brand Collaboration</div>
+                <p class="service-desc">Strategic partnerships with luxury and lifestyle brands. I become the face that
+                    elevates your product to an aspiration.</p>
+                <div class="service-line"></div>
+            </div>
+            <div class="service-card reveal" style="transition-delay:0.1s">
+                <div class="service-num">02</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M23 7l-7 5 7 5V7z" />
+                        <rect x="1" y="5" width="15" height="14" rx="2" />
+                    </svg>
+                </div>
+                <div class="service-name">Fashion Campaigns</div>
+                <p class="service-desc">Full-scale seasonal and product campaigns for fashion houses, designed to make
+                    an immediate cultural impact.</p>
+                <div class="service-line"></div>
+            </div>
+            <div class="service-card reveal" style="transition-delay:0.2s">
+                <div class="service-num">03</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                            d="M20.188 10.934c.2.643.312 1.327.312 2.066s-.112 1.422-.312 2.066L22 16.414l-2.586 2.586-1.347-1.82A9.92 9.92 0 0 1 16 18v2.5h-4V18a9.92 9.92 0 0 1-2.067-.82L8.586 19l-2.586-2.586 1.812-1.348A9.956 9.956 0 0 1 7.5 13c0-.739.112-1.423.312-2.066L6 9.586 8.586 7l1.347 1.82A9.9 9.9 0 0 1 12 8a9.9 9.9 0 0 1 2.067.82L15.414 7 18 9.586l-1.812 1.348z" />
+                    </svg>
+                </div>
+                <div class="service-name">Photoshoots</div>
+                <p class="service-desc">Editorial, commercial, and artistic photoshoots tailored to your creative vision
+                    — from concept to final frame.</p>
+                <div class="service-line"></div>
+            </div>
+            <div class="service-card reveal" style="transition-delay:0.3s">
+                <div class="service-num">04</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M22 4s-2.5 2.5-6 2.5S10 4 10 4 7.5 6.5 4 6.5 0 4 0 4v14s2.5-2.5 6-2.5S12 18 12 18s2.5-2.5 6-2.5 6 2.5 6 2.5V4z" />
+                    </svg>
+                </div>
+                <div class="service-name">Social Media Promo</div>
+                <p class="service-desc">Curated content strategy and authentic promotion across Instagram, TikTok, and
+                    Pinterest to maximize brand visibility.</p>
+                <div class="service-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats">
+        <div class="stats-inner">
+            <div style="text-align:center; margin-bottom:60px;">
+                <div class="section-tag reveal" style="justify-content:center;">By The Numbers</div>
+                <h2 class="section-title reveal" style="text-align:center;">The <em>Impact</em></h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-block reveal">
+                    <span class="stat-num counter" data-target="4200000">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Instagram Followers</span>
+                </div>
+                <div class="stat-block reveal" style="transition-delay:0.1s">
+                    <span class="stat-num counter" data-target="320">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-block reveal" style="transition-delay:0.2s">
+                    <span class="stat-num counter" data-target="85">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Brands Worked With</span>
+                </div>
+                <div class="stat-block reveal" style="transition-delay:0.3s">
+                    <span class="stat-num counter" data-target="12">0</span>
+                    <span class="stat-plus"></span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Let's <em>Create</em> Together</h2>
+        <div class="section-divider"></div>
+        <div class="contact-grid">
+            <div class="contact-info reveal-left">
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m2 7 10 7 10-7" />
+                        </svg>
+                    </div>
+                    <div class="contact-detail-text">
+                        <label>Email</label>
+                        <a href="mailto:aria@arianoir.com">aria@arianoir.com</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="5" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                        </svg>
+                    </div>
+                    <div class="contact-detail-text">
+                        <label>Instagram</label>
+                        <a href="#">@arianoir_official</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <div class="contact-detail-text">
+                        <label>Location</label>
+                        <span>Paris, France &nbsp;·&nbsp; Available Worldwide</span>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </div>
+                    <div class="contact-detail-text">
+                        <label>Agency</label>
+                        <a href="#">Noir Models Management</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form reveal-right">
+                <div class="form-row">
+                    <div class="form-group"><input type="text" placeholder="Your Name" id="fname"></div>
+                    <div class="form-group"><input type="email" placeholder="Email Address" id="femail"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject / Brand" id="fsubject">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell me about your project, vision, and timeline..." id="fmsg"></textarea>
+                </div>
+                <button class="form-submit" onclick="submitForm()"><span>Send Message</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14m-7-7 7 7-7 7" />
+                    </svg>
+                </button>
+                <p class="form-msg" id="formMsg">✦ Thank you — I'll be in touch within 48 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Aria Noir</div>
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#portfolio">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-copy">© 2026 Aria Noir. All Rights Reserved.</div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
